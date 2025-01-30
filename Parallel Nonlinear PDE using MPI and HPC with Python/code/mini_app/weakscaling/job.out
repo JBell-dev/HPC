@@ -1,0 +1,381 @@
+Running base size 64x64...
+Running with 1 processes, grid size 64x64...
+rank 0 / 1 : (1, 1) neigh N:S -2:-2 neigh E:W -2:-2 local dims 64 x 64
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 1
+mesh      :: 64 * 64 dx = 0.015873
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.0475523 seconds
+1333 conjugate gradient iterations, at rate of 28032.3 iters/second
+301 newton iterations
+--------------------------------------------------------------------------------
+### 1, 64, 100, 1333, 301, 0.0475523 ###
+Goodbye!
+Grid: 64x64, Processes: 1
+Runtime: 0.0475523### s
+---
+Running with 2 processes, grid size 90x90...
+rank 0 / 2 : (1, 1) neigh N:S 1:-2 neigh E:W -2:-2 local dims 90 x 45
+rank 1 / 2 : (1, 2) neigh N:S -2:0 neigh E:W -2:-2 local dims 90 x 45
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 2
+mesh      :: 90 * 90 dx = 0.011236
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.0589511 seconds
+1694 conjugate gradient iterations, at rate of 28735.7 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 2, 90, 100, 1694, 300, 0.0589511 ###
+Goodbye!
+Grid: 90x90, Processes: 2
+Runtime: 0.0589511### s
+---
+Running with 4 processes, grid size 128x128...
+rank 0 / 4 : (1, 1) neigh N:S 2:-2 neigh E:W 1:-2 local dims 64 x 64
+rank 1 / 4 : (2, 1) neigh N:S 3:-2 neigh E:W -2:0 local dims 64 x 64
+rank 2 / 4 : (1, 2) neigh N:S -2:0 neigh E:W 3:-2 local dims 64 x 64
+rank 3 / 4 : (2, 2) neigh N:S -2:1 neigh E:W -2:2 local dims 64 x 64
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 4
+mesh      :: 128 * 128 dx = 0.00787402
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.0860838 seconds
+2225 conjugate gradient iterations, at rate of 25846.9 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 4, 128, 100, 2225, 300, 0.0860838 ###
+Goodbye!
+Grid: 128x128, Processes: 4
+Runtime: 0.0860838### s
+---
+Running with 8 processes, grid size 181x181...
+rank 0 / 8 : (1, 1) neigh N:S 2:-2 neigh E:W 1:-2 local dims 91 x 46
+rank 1 / 8 : (2, 1) neigh N:S 3:-2 neigh E:W -2:0 local dims 90 x 46
+rank 2 / 8 : (1, 2) neigh N:S 4:0 neigh E:W 3:-2 local dims 91 x 45
+rank 3 / 8 : (2, 2) neigh N:S 5:1 neigh E:W -2:2 local dims 90 x 45
+rank 4 / 8 : (1, 3) neigh N:S 6:2 neigh E:W 5:-2 local dims 91 x 45
+rank 5 / 8 : (2, 3) neigh N:S 7:3 neigh E:W -2:4 local dims 90 x 45
+rank 6 / 8 : (1, 4) neigh N:S -2:4 neigh E:W 7:-2 local dims 91 x 45
+rank 7 / 8 : (2, 4) neigh N:S -2:5 neigh E:W -2:6 local dims 90 x 45
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 8
+mesh      :: 181 * 181 dx = 0.00555556
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.114313 seconds
+3006 conjugate gradient iterations, at rate of 26296.2 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 8, 181, 100, 3006, 300, 0.114313 ###
+Goodbye!
+Grid: 181x181, Processes: 8
+Runtime: 0.114313### s
+---
+Running with 16 processes, grid size 256x256...
+rank 0 / 16 : (1, 1) neigh N:S 4:-2 neigh E:W 1:-2 local dims 64 x 64
+rank 1 / 16 : (2, 1) neigh N:S 5:-2 neigh E:W 2:0 local dims 64 x 64
+rank 2 / 16 : (3, 1) neigh N:S 6:-2 neigh E:W 3:1 local dims 64 x 64
+rank 3 / 16 : (4, 1) neigh N:S 7:-2 neigh E:W -2:2 local dims 64 x 64
+rank 4 / 16 : (1, 2) neigh N:S 8:0 neigh E:W 5:-2 local dims 64 x 64
+rank 5 / 16 : (2, 2) neigh N:S 9:1 neigh E:W 6:4 local dims 64 x 64
+rank 6 / 16 : (3, 2) neigh N:S 10:2 neigh E:W 7:5 local dims 64 x 64
+rank 7 / 16 : (4, 2) neigh N:S 11:3 neigh E:W -2:6 local dims 64 x 64
+rank 8 / 16 : (1, 3) neigh N:S 12:4 neigh E:W 9:-2 local dims 64 x 64
+rank 9 / 16 : (2, 3) neigh N:S 13:5 neigh E:W 10:8 local dims 64 x 64
+rank 10 / 16 : (3, 3) neigh N:S 14:6 neigh E:W 11:9 local dims 64 x 64
+rank 11 / 16 : (4, 3) neigh N:S 15:7 neigh E:W -2:10 local dims 64 x 64
+rank 12 / 16 : (1, 4) neigh N:S -2:8 neigh E:W 13:-2 local dims 64 x 64
+rank 13 / 16 : (2, 4) neigh N:S -2:9 neigh E:W 14:12 local dims 64 x 64
+rank 14 / 16 : (3, 4) neigh N:S -2:10 neigh E:W 15:13 local dims 64 x 64
+rank 15 / 16 : (4, 4) neigh N:S -2:11 neigh E:W -2:14 local dims 64 x 64
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 16
+mesh      :: 256 * 256 dx = 0.00392157
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.179926 seconds
+4109 conjugate gradient iterations, at rate of 22837.2 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 16, 256, 100, 4109, 300, 0.179926 ###
+Goodbye!
+Grid: 256x256, Processes: 16
+Runtime: 0.179926### s
+---
+Running base size 128x128...
+Running with 1 processes, grid size 128x128...
+rank 0 / 1 : (1, 1) neigh N:S -2:-2 neigh E:W -2:-2 local dims 128 x 128
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 1
+mesh      :: 128 * 128 dx = 0.00787402
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.336026 seconds
+2232 conjugate gradient iterations, at rate of 6642.35 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 1, 128, 100, 2232, 300, 0.336026 ###
+Goodbye!
+Grid: 128x128, Processes: 1
+Runtime: 0.336026### s
+---
+Running with 2 processes, grid size 181x181...
+rank 0 / 2 : (1, 1) neigh N:S 1:-2 neigh E:W -2:-2 local dims 181 x 91
+rank 1 / 2 : (1, 2) neigh N:S -2:0 neigh E:W -2:-2 local dims 181 x 90
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 2
+mesh      :: 181 * 181 dx = 0.00555556
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.421861 seconds
+3010 conjugate gradient iterations, at rate of 7135.05 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 2, 181, 100, 3010, 300, 0.421861 ###
+Goodbye!
+Grid: 181x181, Processes: 2
+Runtime: 0.421861### s
+---
+Running with 4 processes, grid size 256x256...
+rank 0 / 4 : (1, 1) neigh N:S 2:-2 neigh E:W 1:-2 local dims 128 x 128
+rank 1 / 4 : (2, 1) neigh N:S 3:-2 neigh E:W -2:0 local dims 128 x 128
+rank 2 / 4 : (1, 2) neigh N:S -2:0 neigh E:W 3:-2 local dims 128 x 128
+rank 3 / 4 : (2, 2) neigh N:S -2:1 neigh E:W -2:2 local dims 128 x 128
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 4
+mesh      :: 256 * 256 dx = 0.00392157
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.632646 seconds
+4107 conjugate gradient iterations, at rate of 6491.78 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 4, 256, 100, 4107, 300, 0.632646 ###
+Goodbye!
+Grid: 256x256, Processes: 4
+Runtime: 0.632646### s
+---
+Running with 8 processes, grid size 362x362...
+rank 0 / 8 : (1, 1) neigh N:S 2:-2 neigh E:W 1:-2 local dims 181 x 91
+rank 1 / 8 : (2, 1) neigh N:S 3:-2 neigh E:W -2:0 local dims 181 x 91
+rank 2 / 8 : (1, 2) neigh N:S 4:0 neigh E:W 3:-2 local dims 181 x 91
+rank 3 / 8 : (2, 2) neigh N:S 5:1 neigh E:W -2:2 local dims 181 x 91
+rank 4 / 8 : (1, 3) neigh N:S 6:2 neigh E:W 5:-2 local dims 181 x 90
+rank 5 / 8 : (2, 3) neigh N:S 7:3 neigh E:W -2:4 local dims 181 x 90
+rank 6 / 8 : (1, 4) neigh N:S -2:4 neigh E:W 7:-2 local dims 181 x 90
+rank 7 / 8 : (2, 4) neigh N:S -2:5 neigh E:W -2:6 local dims 181 x 90
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 8
+mesh      :: 362 * 362 dx = 0.00277008
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 0.794237 seconds
+5654 conjugate gradient iterations, at rate of 7118.78 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 8, 362, 100, 5654, 300, 0.794237 ###
+Goodbye!
+Grid: 362x362, Processes: 8
+Runtime: 0.794237### s
+---
+Running with 16 processes, grid size 512x512...
+rank 0 / 16 : (1, 1) neigh N:S 4:-2 neigh E:W 1:-2 local dims 128 x 128
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 16
+mesh      :: 512 * 512 dx = 0.00195695
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+rank 1 / 16 : (2, 1) neigh N:S 5:-2 neigh E:W 2:0 local dims 128 x 128
+rank 2 / 16 : (3, 1) neigh N:S 6:-2 neigh E:W 3:1 local dims 128 x 128
+rank 3 / 16 : (4, 1) neigh N:S 7:-2 neigh E:W -2:2 local dims 128 x 128
+rank 4 / 16 : (1, 2) neigh N:S 8:0 neigh E:W 5:-2 local dims 128 x 128
+rank 5 / 16 : (2, 2) neigh N:S 9:1 neigh E:W 6:4 local dims 128 x 128
+rank 6 / 16 : (3, 2) neigh N:S 10:2 neigh E:W 7:5 local dims 128 x 128
+rank 7 / 16 : (4, 2) neigh N:S 11:3 neigh E:W -2:6 local dims 128 x 128
+rank 8 / 16 : (1, 3) neigh N:S 12:4 neigh E:W 9:-2 local dims 128 x 128
+rank 9 / 16 : (2, 3) neigh N:S 13:5 neigh E:W 10:8 local dims 128 x 128
+rank 10 / 16 : (3, 3) neigh N:S 14:6 neigh E:W 11:9 local dims 128 x 128
+rank 11 / 16 : (4, 3) neigh N:S 15:7 neigh E:W -2:10 local dims 128 x 128
+rank 12 / 16 : (1, 4) neigh N:S -2:8 neigh E:W 13:-2 local dims 128 x 128
+rank 13 / 16 : (2, 4) neigh N:S -2:9 neigh E:W 14:12 local dims 128 x 128
+rank 14 / 16 : (3, 4) neigh N:S -2:10 neigh E:W 15:13 local dims 128 x 128
+rank 15 / 16 : (4, 4) neigh N:S -2:11 neigh E:W -2:14 local dims 128 x 128
+--------------------------------------------------------------------------------
+simulation took 1.24641 seconds
+7817 conjugate gradient iterations, at rate of 6271.6 iters/second
+301 newton iterations
+--------------------------------------------------------------------------------
+### 16, 512, 100, 7817, 301, 1.24641 ###
+Goodbye!
+Grid: 512x512, Processes: 16
+Runtime: 1.24641### s
+---
+Running base size 256x256...
+Running with 1 processes, grid size 256x256...
+rank 0 / 1 : (1, 1) neigh N:S -2:-2 neigh E:W -2:-2 local dims 256 x 256
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 1
+mesh      :: 256 * 256 dx = 0.00392157
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 2.34209 seconds
+4100 conjugate gradient iterations, at rate of 1750.57 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 1, 256, 100, 4100, 300, 2.34209 ###
+Goodbye!
+Grid: 256x256, Processes: 1
+Runtime: 2.34209### s
+---
+Running with 2 processes, grid size 362x362...
+rank 0 / 2 : (1, 1) neigh N:S 1:-2 neigh E:W -2:-2 local dims 362 x 181
+rank 1 / 2 : (1, 2) neigh N:S -2:0 neigh E:W -2:-2 local dims 362 x 181
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 2
+mesh      :: 362 * 362 dx = 0.00277008
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 3.0745 seconds
+5663 conjugate gradient iterations, at rate of 1841.92 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 2, 362, 100, 5663, 300, 3.0745 ###
+Goodbye!
+Grid: 362x362, Processes: 2
+Runtime: 3.0745### s
+---
+Running with 4 processes, grid size 512x512...
+rank 0 / 4 : (1, 1) neigh N:S 2:-2 neigh E:W 1:-2 local dims 256 x 256
+rank 1 / 4 : (2, 1) neigh N:S 3:-2 neigh E:W -2:0 local dims 256 x 256
+rank 2 / 4 : (1, 2) neigh N:S -2:0 neigh E:W 3:-2 local dims 256 x 256
+rank 3 / 4 : (2, 2) neigh N:S -2:1 neigh E:W -2:2 local dims 256 x 256
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 4
+mesh      :: 512 * 512 dx = 0.00195695
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 4.59702 seconds
+7806 conjugate gradient iterations, at rate of 1698.06 iters/second
+300 newton iterations
+--------------------------------------------------------------------------------
+### 4, 512, 100, 7806, 300, 4.59702 ###
+Goodbye!
+Grid: 512x512, Processes: 4
+Runtime: 4.59702### s
+---
+Running with 8 processes, grid size 724x724...
+rank 0 / 8 : (1, 1) neigh N:S 2:-2 neigh E:W 1:-2 local dims 362 x 181
+rank 1 / 8 : (2, 1) neigh N:S 3:-2 neigh E:W -2:0 local dims 362 x 181
+rank 2 / 8 : (1, 2) neigh N:S 4:0 neigh E:W 3:-2 local dims 362 x 181
+rank 3 / 8 : (2, 2) neigh N:S 5:1 neigh E:W -2:2 local dims 362 x 181
+rank 4 / 8 : (1, 3) neigh N:S 6:2 neigh E:W 5:-2 local dims 362 x 181
+rank 5 / 8 : (2, 3) neigh N:S 7:3 neigh E:W -2:4 local dims 362 x 181
+rank 6 / 8 : (1, 4) neigh N:S -2:4 neigh E:W 7:-2 local dims 362 x 181
+rank 7 / 8 : (2, 4) neigh N:S -2:5 neigh E:W -2:6 local dims 362 x 181
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 8
+mesh      :: 724 * 724 dx = 0.00138313
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+--------------------------------------------------------------------------------
+simulation took 12.3356 seconds
+10882 conjugate gradient iterations, at rate of 882.164 iters/second
+304 newton iterations
+--------------------------------------------------------------------------------
+### 8, 724, 100, 10882, 304, 12.3356 ###
+Goodbye!
+Grid: 724x724, Processes: 8
+Runtime: 12.3356### s
+---
+Running with 16 processes, grid size 1024x1024...
+rank 0 / 16 : (1, 1) neigh N:S 4:-2 neigh E:W 1:-2 local dims 256 x 256
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 16
+mesh      :: 1024 * 1024 dx = 0.000977517
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================
+rank 1 / 16 : (2, 1) neigh N:S 5:-2 neigh E:W 2:0 local dims 256 x 256
+rank 2 / 16 : (3, 1) neigh N:S 6:-2 neigh E:W 3:1 local dims 256 x 256
+rank 3 / 16 : (4, 1) neigh N:S 7:-2 neigh E:W -2:2 local dims 256 x 256
+rank 4 / 16 : (1, 2) neigh N:S 8:0 neigh E:W 5:-2 local dims 256 x 256
+rank 5 / 16 : (2, 2) neigh N:S 9:1 neigh E:W 6:4 local dims 256 x 256
+rank 6 / 16 : (3, 2) neigh N:S 10:2 neigh E:W 7:5 local dims 256 x 256
+rank 7 / 16 : (4, 2) neigh N:S 11:3 neigh E:W -2:6 local dims 256 x 256
+rank 8 / 16 : (1, 3) neigh N:S 12:4 neigh E:W 9:-2 local dims 256 x 256
+rank 9 / 16 : (2, 3) neigh N:S 13:5 neigh E:W 10:8 local dims 256 x 256
+rank 10 / 16 : (3, 3) neigh N:S 14:6 neigh E:W 11:9 local dims 256 x 256
+rank 11 / 16 : (4, 3) neigh N:S 15:7 neigh E:W -2:10 local dims 256 x 256
+rank 12 / 16 : (1, 4) neigh N:S -2:8 neigh E:W 13:-2 local dims 256 x 256
+rank 13 / 16 : (2, 4) neigh N:S -2:9 neigh E:W 14:12 local dims 256 x 256
+rank 14 / 16 : (3, 4) neigh N:S -2:10 neigh E:W 15:13 local dims 256 x 256
+rank 15 / 16 : (4, 4) neigh N:S -2:11 neigh E:W -2:14 local dims 256 x 256
+--------------------------------------------------------------------------------
+simulation took 26.9678 seconds
+16065 conjugate gradient iterations, at rate of 595.71 iters/second
+338 newton iterations
+--------------------------------------------------------------------------------
+### 16, 1024, 100, 16065, 338, 26.9678 ###
+Goodbye!
+Grid: 1024x1024, Processes: 16
+Runtime: 26.9678### s
+---

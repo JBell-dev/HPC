@@ -1,0 +1,33 @@
+Loading gcc/13.2.0-gcc-8.5.0-5hqhkwo
+  Loading requirement: gcc-runtime/8.5.0-gcc-8.5.0-7fyorqa
+    gmp/6.2.1-gcc-8.5.0-lrpcvy5 mpfr/4.2.1-gcc-8.5.0-ybeybcx
+    mpc/1.3.1-gcc-8.5.0-cv2gjfw zlib-ng/2.1.6-gcc-8.5.0-ztbc5xt
+    zstd/1.5.5-gcc-8.5.0-azepnn7
+Currently Loaded Modulefiles:
+ 1) gcc-runtime/8.5.0-gcc-8.5.0-7fyorqa   5) zlib-ng/2.1.6-gcc-8.5.0-ztbc5xt  
+ 2) gmp/6.2.1-gcc-8.5.0-lrpcvy5           6) zstd/1.5.5-gcc-8.5.0-azepnn7     
+ 3) mpfr/4.2.1-gcc-8.5.0-ybeybcx          7) gcc/13.2.0-gcc-8.5.0-5hqhkwo     
+ 4) mpc/1.3.1-gcc-8.5.0-cv2gjfw          
+rm -f *.o hist_seq hist_omp *.data
+/apps/spack/opt/spack/linux-oracle8-haswell/gcc-8.5.0/gcc-13.2.0-5hqhkwos6l3mv7jxsxpwiab7zpjpimxr/bin/g++ -c -O3 -fopenmp hist_seq.cpp
+/apps/spack/opt/spack/linux-oracle8-haswell/gcc-8.5.0/gcc-13.2.0-5hqhkwos6l3mv7jxsxpwiab7zpjpimxr/bin/g++ -c -O3 -fopenmp walltime.c
+/apps/spack/opt/spack/linux-oracle8-haswell/gcc-8.5.0/gcc-13.2.0-5hqhkwos6l3mv7jxsxpwiab7zpjpimxr/bin/g++ -O3 -fopenmp hist_seq.o walltime.o -o hist_seq
+/apps/spack/opt/spack/linux-oracle8-haswell/gcc-8.5.0/gcc-13.2.0-5hqhkwos6l3mv7jxsxpwiab7zpjpimxr/bin/g++ -c -O3 -fopenmp hist_omp.cpp
+/apps/spack/opt/spack/linux-oracle8-haswell/gcc-8.5.0/gcc-13.2.0-5hqhkwos6l3mv7jxsxpwiab7zpjpimxr/bin/g++ -O3 -fopenmp hist_omp.o walltime.o -o hist_omp
+dist[0]=93
+dist[1]=3285
+dist[2]=85350
+dist[3]=1260714
+dist[4]=10871742
+dist[5]=54586161
+dist[6]=159818689
+dist[7]=273378693
+dist[8]=273376199
+dist[9]=159818437
+dist[10]=54574824
+dist[11]=10876078
+dist[12]=1261215
+dist[13]=85046
+dist[14]=3397
+dist[15]=77
+Time: 0.835593 sec

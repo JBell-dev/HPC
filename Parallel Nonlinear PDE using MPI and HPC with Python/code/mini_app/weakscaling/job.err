@@ -1,0 +1,6 @@
+Loading openmpi/5.0.5
+  Loading requirement: gcc-runtime/8.5.0-gcc-8.5.0-7fyorqa
+    gmp/6.2.1-gcc-8.5.0-lrpcvy5 mpfr/4.2.1-gcc-8.5.0-ybeybcx
+    mpc/1.3.1-gcc-8.5.0-cv2gjfw zlib-ng/2.1.6-gcc-8.5.0-ztbc5xt
+    zstd/1.5.5-gcc-8.5.0-azepnn7 gcc/13.2.0-gcc-8.5.0-5hqhkwo
+    ucx/1.15.0-gcc-8.5.0-cnozz5i

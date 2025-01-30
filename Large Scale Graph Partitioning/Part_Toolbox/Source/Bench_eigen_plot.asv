@@ -1,0 +1,88 @@
+% Visualize information from the eigenspectrum of the graph Laplacian
+%
+% D.P & O.S for the "HPC Course" at USI and
+%                   "HPC Lab for CSE" at ETH Zurich
+
+% add necessary paths
+addpaths_GP;
+
+% Graphical output at bisection level
+picture = 0;
+
+% Cases under consideration
+% load airfoil1.mat;
+% load 3elt.mat;
+% load barth4.mat;
+%load mesh3e1.mat;
+%load crack.mat;
+
+% Initialize the cases
+W      = Problem.A;
+coords = Problem.aux.coord;
+
+% Steps
+% 1. Construct the graph Laplacian of the graph in question.
+D = diag(sum(W));
+L = D - W;
+% 2. Compute eigenvectors associated with the smallest eigenvalues.
+[V,D] = eigs(L,3,"smallestabs"); 
+display(D);
+first = V(:,1);
+sec = V(:,2);
+third = V(:,3);
+% 3. Perform spectral bisection.
+map = zeros(length(sec),1); 
+map(sec > 0) = 1;
+%display(map);
+% 4. Visualize:
+%   i.   The first and second eigenvectors.
+figure('Name', 'First Two Eigenvectors'); 
+subplot(2,1,1); 
+plot(V(:,1), 'b.-'); 
+title('First Eigenvector'); 
+xlabel('Node Index'); 
+ylabel('Eigenvector Value'); 
+grid on; 
+
+subplot(2,1,2); 
+plot(V(:,2), 'r.-'); 
+title('Second Eigenvector (Fiedler)'); 
+xlabel('Node Index'); 
+ylabel('Eigenvector Value'); 
+grid on;
+% ii. The second eigenvector projected on the coordinate system space of graphs.
+figure('Name', 'Fiedler Vector Projection with Partitioning');
+set(gcf, 'Color', 'white');
+
+% Calculate scaling
+coord_range = max(max(coords) - min(coords));
+eig_range = max(sec) - min(sec);
+scale_factor = coord_range / eig_range;
+sec_scaled = sec * scale_factor;
+
+% Create 3D coordinates with scaled z-values
+coords3D = [coords sec_scaled];
+
+% Plot scatter first to establish the box
+% First create scatter plot to establish scaling and node coloring
+scatter3(coords(:,1), coords(:,2), sec_scaled, 30, sec, 'filled');
+hold on;
+colormap(jet);
+colorbar;
+
+% Get the axis limits
+ax_limits = axis;
+
+% Now add the edges with partitioning colors (black/gray/red)
+gplotpart(W, coords3D, part1, 'k', [0.7 0.7 0.7], 'r');
+
+% Restore view and appearance
+view(45, 30);
+set(gca, 'Color', 'white');
+grid on;
+box on;
+axis(ax_limits);
+
+%   iii. The spectral bi-partitioning results using the spectral coordinates of each graph.
+
+

@@ -1,0 +1,10 @@
+rank 0 / 2 : (1, 1) neigh N:S 1:-2 neigh E:W -2:-2 local dims 64 x 32
+rank 1 / 2 : (1, 2) neigh N:S -2:0 neigh E:W -2:-2 local dims 64 x 32
+================================================================================
+                      Welcome to mini-stencil!
+version   :: C++ MPI
+processes :: 2
+mesh      :: 64 * 64 dx = 0.015873
+time      :: 100 time steps from 0 .. 0.01
+iteration :: CG 300, Newton 50, tolerance 1e-06
+================================================================================

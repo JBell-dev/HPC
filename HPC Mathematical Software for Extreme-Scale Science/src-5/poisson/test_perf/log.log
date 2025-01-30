@@ -1,0 +1,171 @@
+
+
+Running PETSc solver for 8x8
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 8x8
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=8, ny=8
+Time for RHS & Matrix Assembly: 0.001087 seconds
+Time for Solve: 0.000048 seconds
+L2 Norm of the solution: 5.675990
+Running Python solver for 8x8
+Selected solvers: ['sp_dir', 'dn_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 8x8
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.000023 seconds
+Matrix Assembly Time:                    0.000607 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               0.000279 seconds, Norm of Solution: 5.675990
+Dense Direct Solver Time:                0.007386 seconds, Norm of Solution: 5.675990
+Conjugate Gradient (sparse) Solver Time: 0.000417 seconds, Norm of Solution: 5.675990
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_dn_dir ...
+Solution written to disk for solution_sp_cg ...
+
+
+Running PETSc solver for 16x16
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 16x16
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=16, ny=16
+Time for RHS & Matrix Assembly: 0.001137 seconds
+Time for Solve: 0.000089 seconds
+L2 Norm of the solution: 12.332471
+Running Python solver for 16x16
+Selected solvers: ['sp_dir', 'dn_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 16x16
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.000020 seconds
+Matrix Assembly Time:                    0.001093 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               0.000749 seconds, Norm of Solution: 12.332471
+Dense Direct Solver Time:                0.002298 seconds, Norm of Solution: 12.332471
+Conjugate Gradient (sparse) Solver Time: 0.000947 seconds, Norm of Solution: 12.332471
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_dn_dir ...
+Solution written to disk for solution_sp_cg ...
+
+
+Running PETSc solver for 32x32
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 32x32
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=32, ny=32
+Time for RHS & Matrix Assembly: 0.001523 seconds
+Time for Solve: 0.000474 seconds
+L2 Norm of the solution: 25.559988
+Running Python solver for 32x32
+Selected solvers: ['sp_dir', 'dn_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 32x32
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.000022 seconds
+Matrix Assembly Time:                    0.003030 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               0.003100 seconds, Norm of Solution: 25.559988
+Dense Direct Solver Time:                0.023622 seconds, Norm of Solution: 25.559988
+Conjugate Gradient (sparse) Solver Time: 0.002347 seconds, Norm of Solution: 25.559988
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_dn_dir ...
+Solution written to disk for solution_sp_cg ...
+
+
+Running PETSc solver for 64x64
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 64x64
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=64, ny=64
+Time for RHS & Matrix Assembly: 0.003005 seconds
+Time for Solve: 0.003292 seconds
+L2 Norm of the solution: 51.978598
+Running Python solver for 64x64
+Selected solvers: ['sp_dir', 'dn_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 64x64
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.000042 seconds
+Matrix Assembly Time:                    0.011163 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               0.015249 seconds, Norm of Solution: 51.978598
+Dense Direct Solver Time:                0.499083 seconds, Norm of Solution: 51.978598
+Conjugate Gradient (sparse) Solver Time: 0.008315 seconds, Norm of Solution: 51.978598
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_dn_dir ...
+Solution written to disk for solution_sp_cg ...
+
+
+Running PETSc solver for 128x128
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 128x128
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=128, ny=128
+Time for RHS & Matrix Assembly: 0.008771 seconds
+Time for Solve: 0.026401 seconds
+L2 Norm of the solution: 104.798789
+Running Python solver for 128x128
+Selected solvers: ['sp_dir', 'dn_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 128x128
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.000143 seconds
+Matrix Assembly Time:                    0.043756 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               0.103832 seconds, Norm of Solution: 104.798789
+Dense Direct Solver Time:                12.469276 seconds, Norm of Solution: 104.798789
+Conjugate Gradient (sparse) Solver Time: 0.059424 seconds, Norm of Solution: 104.798789
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_dn_dir ...
+Solution written to disk for solution_sp_cg ...
+
+
+Running PETSc solver for 256x256
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 256x256
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=256, ny=256
+Time for RHS & Matrix Assembly: 0.033469 seconds
+Time for Solve: 0.207403 seconds
+L2 Norm of the solution: 210.430910
+Running Python solver for 256x256
+Selected solvers: ['sp_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 256x256
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.000531 seconds
+Matrix Assembly Time:                    0.179478 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               0.786240 seconds, Norm of Solution: 210.430910
+Conjugate Gradient (sparse) Solver Time: 0.376172 seconds, Norm of Solution: 210.430910
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_sp_cg ...
+
+
+Running PETSc solver for 512x512
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver PETSc for 512x512
+----------------------------------------------------------------------------------------------------
+Grid size after refinement: nx=512, ny=512
+Time for RHS & Matrix Assembly: 0.133794 seconds
+Time for Solve: 1.961334 seconds
+L2 Norm of the solution: 421.691083
+Running Python solver for 512x512
+Selected solvers: ['sp_dir', 'sp_cg']
+----------------------------------------------------------------------------------------------------
+Poisson's Equation Solver Python for 512x512
+----------------------------------------------------------------------------------------------------
+RHS Time:                                0.002243 seconds
+Matrix Assembly Time:                    0.753097 seconds
+----------------------------------------------------------------------------------------------------
+Sparse Direct Solver Time:               7.344012 seconds, Norm of Solution: 421.691083
+Conjugate Gradient (sparse) Solver Time: 2.991864 seconds, Norm of Solution: 421.691083
+----------------------------------------------------------------------------------------------------
+Solution written to disk for solution_sp_dir ...
+Solution written to disk for solution_sp_cg ...
